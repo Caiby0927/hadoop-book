@@ -15,6 +15,7 @@ public class MaxTemperatureReducer
       throws IOException, InterruptedException {
     
     int maxValue = Integer.MIN_VALUE;
+//    循环比较当前年份下的每个气温，保存最高的气温
     for (IntWritable value : values) {
       maxValue = Math.max(maxValue, value.get());
     }
